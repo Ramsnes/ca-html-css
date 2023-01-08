@@ -1,4 +1,124 @@
 body {
   font-family: "roboto", Arial, Helvetica, sans-serif;
-  background-image: url(/images/forest-bgp.png);
+  background-color: #0a3641; /*For when scrolling outside of nav-bars*/
+  color: #dddddd;
+  background-image: url(../images/forest-bgp.png);
+  background-size: cover; /*contain?*/
+  background-repeat: no-repeat;
+  /*OR
+  background: cover no-repeat url("../images/forest-bgp.png");*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* 3 lines down. https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*nav*/
+
+.header-nav {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0px; /*Add margin 0px to not create colliding margins*/
+  padding: 0px;
+}
+
+header nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 8px;
+  font-size: 1rm;
+  padding: 20px 60px;
+}
+
+header {
+  background-color: #0a3641;
+}
+
+/*Footer*/
+footer {
+  margin-top: auto;
+}
+
+footer nav {
+  background-color: #0a3641;
+}
+
+.footer-nav {
+  color: #dddddd;
+  text-decoration: none;
+  margin: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 8px;
+  font-size: 1rm;
+  padding: 20px 60px;
+}
+
+footer div {
+  text-align: center;
+}
+
+.copyright {
+  background-color: #000;
+}
+
+.current {
+  color: #dddddd;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.logobigwhite {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  margin-bottom: 70px;
+}
+
+/*index.html*/
+.threepics {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.pics {
+  width: 25%;
+  max-height: auto;
+}
+
+/*browse.html*/
+.alljackets {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.jacket {
+  width: 10%;
+  max-height: auto;
+  margin: 13px;
 }
