@@ -34,7 +34,6 @@ header ul {
 header nav li {
   display: inline-block;
   text-transform: uppercase;
-  text-align: left;
   margin: 8px;
   font-size: 1rm;
   padding: 20px 60px;
@@ -42,6 +41,15 @@ header nav li {
 
 header {
   background-color: #0a3641;
+}
+
+.cart {
+  text-align: center;
+  max-height: auto;
+  margin-right: auto;
+  margin: 0px 0px 0px 800px;
+  padding: 0;
+  width: 100px;
 }
 
 /*Footer*/
@@ -74,13 +82,21 @@ footer nav li {
   padding: 20px 60px;
 }
 
-footer div {
-  text-align: center;
+footer img {
+  margin: 0px 0px 0px 800px;
+  padding: 0;
+  width: 100px;
 }
 
 .copyright {
   background-color: #000;
 }
+
+footer div {
+  text-align: center;
+}
+
+/* Other */
 
 .current {
   color: #dddddd;
@@ -121,4 +137,24 @@ footer div {
   width: 10%;
   max-height: auto;
   margin: 13px;
+}
+
+/*about.html*/
+.abouttext1 {
+}
+
+.abouttext2 {
+}
+
+.shadowbox {
+  background-image: url(/images/Rectangle-about.png);
+}
+
+.rainyworkers {
+}
+
+.shopify {
+}
+
+.gettyimages {
 }
