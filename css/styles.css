@@ -158,3 +158,51 @@ footer div {
 
 .gettyimages {
 }
+
+/* cart.html */
+.redline-cart {
+  width: 10%;
+  max-height: auto;
+}
+
+.shop-more {
+  background-color: #1d68cd;
+  /*
+HTMLs used:
+cart, checkoutsuccsessful
+*/
+}
+
+.pay-cta {
+  background-color: #c9bb3f;
+}
+
+.p-cart {
+}
+
+/* checkout.html */
+.order-summary {
+}
+
+/* redline.html */
+.redline-redline {
+  width: 10%;
+  max-height: auto;
+  /* 
+  htmls: redline, checkout, 
+  */
+}
+
+.addtocart-redline {
+  background-color: #c9bb3f;
+}
+
+/* contact.html */
+.contact-info {
+}
+
+.gmaps {
+}
+
+.form__input {
+}
