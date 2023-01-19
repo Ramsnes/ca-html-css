@@ -7,9 +7,6 @@ body {
   background-repeat: no-repeat;
   /*OR
   background: cover no-repeat url("../images/forest-bgp.png");*/
-}
-
-body {
   margin: 0;
   padding: 0;
   /* 3 lines down. https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14*/
@@ -18,9 +15,15 @@ body {
   flex-direction: column;
 }
 
-/*nav*/
+/*Header*/
 
-.header-nav {
+header,
+footer {
+  background-color: #0a3641;
+}
+
+.header-nav,
+.footer-nav {
   color: #dddddd;
   text-decoration: none;
 }
@@ -39,17 +42,14 @@ header nav li {
   padding: 20px 60px;
 }
 
-header {
-  background-color: #0a3641;
-}
-
 .cart {
   text-align: center;
   max-height: auto;
   margin-right: auto;
   margin: 0px 0px 0px 800px;
   padding: 0;
-  width: 100px;
+  position: relative;
+  top: 10px;
 }
 
 /*Footer*/
@@ -59,12 +59,6 @@ footer {
 
 footer nav {
   background-color: #0a3641;
-}
-
-.footer-nav {
-  color: #dddddd;
-  text-decoration: none;
-  margin: 0;
 }
 
 footer ul {
@@ -86,6 +80,8 @@ footer img {
   margin: 0px 0px 0px 800px;
   padding: 0;
   width: 100px;
+  position: relative;
+  top: 15px;
 }
 
 .copyright {
@@ -96,8 +92,6 @@ footer div {
   text-align: center;
 }
 
-/* Other */
-
 .current {
   color: #dddddd;
   text-decoration: underline;
@@ -105,25 +99,39 @@ footer div {
 }
 
 .logobigwhite {
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   width: 25%;
   margin-bottom: 70px;
+  left: 530px;
 }
 
 /*index.html*/
 .threepics {
-  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  /* width: 70%; */
+  max-width: 70%;
 }
 
-.pics {
-  width: 25%;
-  max-height: auto;
+.pic {
+  width: 30%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* Float option? 
+.threepics {
+  width: 100%;
+}
+
+.threepics img {
+  float: left;
+  margin: 0px 10px;
+} */
 
 /*browse.html*/
 .alljackets {
