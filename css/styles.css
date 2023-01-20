@@ -1,108 +1,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+html,
 body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   background-image: url(../images/forest-bgp.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #0a3641; /*For when scrolling outside of nav-bars*/
+  background-color: #0a3641;
 }
 
-/*--
-header
---*/
-li,
-a,
-button {
-  font-family: "roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
-  text-decoration: none;
+body {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
-}
-
-header,
-footer {
+  height: 70px;
   background-color: #0a3641;
+  padding: 0px 20px 0px 20px;
 }
 
-.logo {
-  cursor: pointer;
-  order: 3; /*--
-  this changes the order of the logo from first to third
-  --*/
-  margin-left: auto; /*--
-  pushes it to the far right--*/
+header a {
+  text-decoration: none;
+  color: #ddd;
+  text-transform: uppercase;
 }
 
-nav {
-  order: 1; /*--
-  Display: flex; is set to the 'header',
-  nav now comes first in the header and logo comes second
-  --*/
+.cart {
+  width: 75%;
 }
 
-.nav__links {
-  list-style: none;
+main {
+  flex: 1;
 }
 
-.cta {
-  order: 2; /**--
-  the cta now comes after nav, which is set to order 1
-  --*/
+.biglogodiv {
+  /* border: 3px solid white; */
 }
 
-.nav__links li {
-  display: inline-block;
-  padding: 0px 50px;
+.logobigwhite {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /*--
+  make an image a block to center-align it --*/
 }
 
-.nav__links li:nth-child(1) {
-  padding: 0 20px 0 0; /*--
-  The nav li isn't truly all the way to the left, 
-  so padding needs to be removed.
-  
-  nth-child(1) targets the first child in li (services text).
-  We added padding on this in the previous navbar tutorial.
-  --*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #0a3641;
+  padding: 0px 20px 0px 20px;
 }
 
-.nav__links li a {
-  transition: all 0.3s ease 0s;
+footer a {
+  text-decoration: none;
+  color: #ddd;
+  text-transform: uppercase;
 }
 
-.nav__links li a hover {
-  color: #0088a9;
+.logosmall {
+  width: 50%;
 }
 
-button {
-  margin-left: 20px; /*--
-  to fix the spacing between cta(button) and nav
-  --*/
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3 ease 0s;
+.copyright {
+  background-color: #000;
+  color: #ddd;
+  text-align: center;
 }
 
-button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 45%;
+  width: 45%;
+  /* border: 3px solid white; */
+}
+
+.wrapper a {
+  padding: 0 10px 0 10px;
 }
 
 /*--
-footer
+index.html
 --*/
+.threepics {
+  height: auto;
+  display: flex;
+  margin-top: 60px;
+}
+
+.threepics img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/*--
+browse.html
+--*/
+.alljackets {
+  align-items: center;
+  border: 3px solid white;
+  display: flex;
+  box-shadow: 10px;
+}
+
+.jacket {
+  width: 90%;
+  max-height: auto;
+  display: block;
+  display: inline-block;
+  margin: auto;
+  border: solid white;
+}
+
+/*--
+about.html
+--*/
+.about__texts p {
+  color: #ddd;
+}
