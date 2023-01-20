@@ -6,29 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This is a clothing store" />
     <link href="/css/styles.css" rel="stylesheet" />
-    <!-- Font 'roboto' imported from google below-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <title>Rainydays | Home</title>
   </head>
 
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="nav__links">
           <li>
             <a href="/index.html" class="current" class="header-nav">Home</a>
           </li>
           <li>
             <a href="/browse.html" class="header-nav">Browse Collection</a>
           </li>
-          <a class="cart" href="/cart.html">
+          <a class="cta" href="#"><button>Cart</button></a>
+          <!-- <a class="cart" href="/cart.html">
             <img src="/images/cart.png" alt="#" />
-          </a>
+          </a> -->
         </ul>
       </nav>
     </header>
@@ -79,7 +73,9 @@
               <a href="/contact.html" class="footer-nav">Contact us</a>
             </li>
             <a href="/index.html"
-              ><img src="/images/RainyDays_Logo-white-small.png"
+              ><img
+                class="logosmall"
+                src="/images/RainyDays_Logo-white-small.png"
             /></a>
           </ul>
         </nav>

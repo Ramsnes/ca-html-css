@@ -1,0 +1,216 @@
+body {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  background-color: #0a3641; /*For when scrolling outside of nav-bars*/
+  color: #dddddd;
+  background-image: url(../images/forest-bgp.png);
+  background-size: cover; /*contain?*/
+  background-repeat: no-repeat;
+  /*OR
+  background: cover no-repeat url("../images/forest-bgp.png");*/
+  margin: 0;
+  padding: 0;
+  /* 3 lines down. https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header*/
+
+header,
+footer {
+  background-color: #0a3641;
+}
+
+.header-nav,
+.footer-nav {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0px; /*Add margin 0px to not create colliding margins*/
+  padding: 0px;
+}
+
+header nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 8px;
+  font-size: 1rm;
+  padding: 20px 60px;
+}
+
+.cart {
+  text-align: center;
+  max-height: auto;
+  margin-right: auto;
+  margin: 0px 0px 0px 800px;
+  padding: 0;
+  position: relative;
+  top: 10px;
+}
+
+/*Footer*/
+footer {
+  margin-top: auto;
+}
+
+footer nav {
+  background-color: #0a3641;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 8px;
+  font-size: 1rm;
+  padding: 20px 60px;
+}
+
+footer img {
+  margin: 0px 0px 0px 800px;
+  padding: 0;
+  width: 100px;
+  position: relative;
+  top: 15px;
+}
+
+.copyright {
+  background-color: #000;
+}
+
+footer div {
+  text-align: center;
+}
+
+.current {
+  color: #dddddd;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.logobigwhite {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 25%;
+  margin-bottom: 70px;
+  left: 530px;
+}
+
+/*index.html*/
+.threepics {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* width: 70%; */
+  max-width: 70%;
+}
+
+.pic {
+  width: 30%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Float option? 
+.threepics {
+  width: 100%;
+}
+
+.threepics img {
+  float: left;
+  margin: 0px 10px;
+} */
+
+/*browse.html*/
+.alljackets {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.jacket {
+  width: 10%;
+  max-height: auto;
+  margin: 13px;
+}
+
+/*about.html*/
+.abouttext1 {
+}
+
+.abouttext2 {
+}
+
+.shadowbox {
+  background-image: url(/images/Rectangle-about.png);
+}
+
+.rainyworkers {
+}
+
+.shopify {
+}
+
+.gettyimages {
+}
+
+/* cart.html */
+.redline-cart {
+  width: 10%;
+  max-height: auto;
+}
+
+.shop-more {
+  background-color: #1d68cd;
+  /*
+HTMLs used:
+cart, checkoutsuccsessful
+*/
+}
+
+.pay-cta {
+  background-color: #c9bb3f;
+}
+
+.p-cart {
+}
+
+/* checkout.html */
+.order-summary {
+}
+
+/* redline.html */
+.redline-redline {
+  width: 10%;
+  max-height: auto;
+  /* 
+  htmls: redline, checkout, 
+  */
+}
+
+.addtocart-redline {
+  background-color: #c9bb3f;
+}
+
+/* contact.html */
+.contact-info {
+}
+
+.gmaps {
+}
+
+.form__input {
+}

@@ -1,216 +1,108 @@
-body {
-  font-family: "roboto", Arial, Helvetica, sans-serif;
-  background-color: #0a3641; /*For when scrolling outside of nav-bars*/
-  color: #dddddd;
-  background-image: url(../images/forest-bgp.png);
-  background-size: cover; /*contain?*/
-  background-repeat: no-repeat;
-  /*OR
-  background: cover no-repeat url("../images/forest-bgp.png");*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* 3 lines down. https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14*/
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-/*Header*/
+body {
+  background-image: url(../images/forest-bgp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0a3641; /*For when scrolling outside of nav-bars*/
+}
+
+/*--
+header
+--*/
+li,
+a,
+button {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
 
 header,
 footer {
   background-color: #0a3641;
 }
 
-.header-nav,
-.footer-nav {
-  color: #dddddd;
-  text-decoration: none;
+.logo {
+  cursor: pointer;
+  order: 3; /*--
+  this changes the order of the logo from first to third
+  --*/
+  margin-left: auto; /*--
+  pushes it to the far right--*/
 }
 
-header ul {
-  list-style-type: none;
-  margin: 0px; /*Add margin 0px to not create colliding margins*/
-  padding: 0px;
+nav {
+  order: 1; /*--
+  Display: flex; is set to the 'header',
+  nav now comes first in the header and logo comes second
+  --*/
 }
 
-header nav li {
+.nav__links {
+  list-style: none;
+}
+
+.cta {
+  order: 2; /**--
+  the cta now comes after nav, which is set to order 1
+  --*/
+}
+
+.nav__links li {
   display: inline-block;
-  text-transform: uppercase;
-  margin: 8px;
-  font-size: 1rm;
-  padding: 20px 60px;
+  padding: 0px 50px;
 }
 
-.cart {
-  text-align: center;
-  max-height: auto;
-  margin-right: auto;
-  margin: 0px 0px 0px 800px;
-  padding: 0;
-  position: relative;
-  top: 10px;
+.nav__links li:nth-child(1) {
+  padding: 0 20px 0 0; /*--
+  The nav li isn't truly all the way to the left, 
+  so padding needs to be removed.
+  
+  nth-child(1) targets the first child in li (services text).
+  We added padding on this in the previous navbar tutorial.
+  --*/
 }
 
-/*Footer*/
-footer {
-  margin-top: auto;
+.nav__links li a {
+  transition: all 0.3s ease 0s;
 }
 
-footer nav {
-  background-color: #0a3641;
+.nav__links li a hover {
+  color: #0088a9;
 }
 
-footer ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+button {
+  margin-left: 20px; /*--
+  to fix the spacing between cta(button) and nav
+  --*/
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
 }
 
-footer nav li {
-  display: inline-block;
-  text-transform: uppercase;
-  text-align: left;
-  margin: 8px;
-  font-size: 1rm;
-  padding: 20px 60px;
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
 }
 
-footer img {
-  margin: 0px 0px 0px 800px;
-  padding: 0;
-  width: 100px;
-  position: relative;
-  top: 15px;
-}
-
-.copyright {
-  background-color: #000;
-}
-
-footer div {
-  text-align: center;
-}
-
-.current {
-  color: #dddddd;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.logobigwhite {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: 25%;
-  margin-bottom: 70px;
-  left: 530px;
-}
-
-/*index.html*/
-.threepics {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  /* width: 70%; */
-  max-width: 70%;
-}
-
-.pic {
-  width: 30%;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Float option? 
-.threepics {
-  width: 100%;
-}
-
-.threepics img {
-  float: left;
-  margin: 0px 10px;
-} */
-
-/*browse.html*/
-.alljackets {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.jacket {
-  width: 10%;
-  max-height: auto;
-  margin: 13px;
-}
-
-/*about.html*/
-.abouttext1 {
-}
-
-.abouttext2 {
-}
-
-.shadowbox {
-  background-image: url(/images/Rectangle-about.png);
-}
-
-.rainyworkers {
-}
-
-.shopify {
-}
-
-.gettyimages {
-}
-
-/* cart.html */
-.redline-cart {
-  width: 10%;
-  max-height: auto;
-}
-
-.shop-more {
-  background-color: #1d68cd;
-  /*
-HTMLs used:
-cart, checkoutsuccsessful
-*/
-}
-
-.pay-cta {
-  background-color: #c9bb3f;
-}
-
-.p-cart {
-}
-
-/* checkout.html */
-.order-summary {
-}
-
-/* redline.html */
-.redline-redline {
-  width: 10%;
-  max-height: auto;
-  /* 
-  htmls: redline, checkout, 
-  */
-}
-
-.addtocart-redline {
-  background-color: #c9bb3f;
-}
-
-/* contact.html */
-.contact-info {
-}
-
-.gmaps {
-}
-
-.form__input {
-}
+/*--
+footer
+--*/
