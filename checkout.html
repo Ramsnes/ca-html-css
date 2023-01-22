@@ -11,62 +11,51 @@
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/index.html" class="header-nav" class="current">Home</a>
-          </li>
-          <li>
-            <a href="/browse.html" class="header-nav">Browse Collection</a>
-          </li>
-          <a class="cart" href="/cart.html">
-            <img src="/images/cart.png" alt="#" />
-          </a>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <div>
+          <a href="/index.html">Home</a>
+        </div>
+        <div>
+          <a href="/browse.html">Browse collection</a>
+        </div>
+      </div>
+      <div>
+        <a href="/checkout.html"
+          ><img class="cart" src="/images/cart.png" />
+        </a>
+      </div>
     </header>
-
-    <a href="/index.html"
-      ><img
-        src="/images/RainyDays_Logo-white.png"
-        alt="White logo of Rainydays"
-        class="logobigwhite"
-    /></a>
 
     <main>
       <div class="order-summary">
         <p>Order summary</p>
-        <div>
-          <img
-            class="redline-redline"
-            src="/assets/RainyDays_Jacket3.png"
-            alt="jacket redline"
-          />
+        <div class="checkout-redline">
+          <img src="/assets/RainyDays_Jacket3.png" alt="jacket redline" />
         </div>
-        <p>Shop more</p>
       </div>
-      <div>
-        <a href="/checkoutsuccessful.html">Pay €18.98</a>
+      <div class="cta-checkout">
+        <a class="cta-shop-more-checkout" href="/browse.html"
+          ><button>Shop more</button></a
+        >
+        <div>
+          <a class="cta-pay" href="/checkoutsuccessful.html"
+            ><button>Pay €18.98</button></a
+          >
+        </div>
       </div>
     </main>
 
     <footer>
-      <section>
-        <nav>
-          <ul>
-            <li>
-              <a href="/about.html" class="footer-nav">About</a>
-            </li>
-            <li>
-              <a href="/contact.html" class="footer-nav">Contact us</a>
-            </li>
-            <a href="/index.html"
-              ><img src="/images/RainyDays_Logo-white-small.png"
-            /></a>
-          </ul>
-        </nav>
-      </section>
-      <div>Copyright &copy;</div>
+      <div class="wrapper">
+        <div><a href="/about.html">About</a></div>
+        <div><a href="/contact.html">Contact</a></div>
+      </div>
+      <div>
+        <a href="/index.html"
+          ><img class="logosmall" src="/images/RainyDays_Logo-white-small.png"
+        /></a>
+      </div>
     </footer>
+    <div>Copyright &copy;</div>
   </body>
 </html>

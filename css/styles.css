@@ -97,6 +97,8 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3 ease 0s;
+  width: 150px;
+  height: auto;
 }
 
 button:hover {
@@ -216,7 +218,6 @@ redline.html
 }
 
 .cta-redline {
-  border: 1px solid white;
   margin: 10px;
 }
 
@@ -247,10 +248,29 @@ cart.html
   margin-right: auto;
 }
 
-.cta-shop-more {
+/*--
+checkout.html
+--*/
+.order-summary {
+  display: flex;
+  color: white;
   border: 1px solid white;
+  padding: 150px 50px 50px 50px;
 }
 
-.pay-cta {
+.checkout-redline {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.checkout-redline img {
+  width: 20%;
+}
+
+.cta-checkout {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
   border: 1px solid white;
 }
