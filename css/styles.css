@@ -91,6 +91,18 @@ footer a {
   padding: 0 10px 0 10px;
 }
 
+button {
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
 /*--
 index.html
 --*/
@@ -179,6 +191,7 @@ form {
 redline.html
 --*/
 .redline-main {
+  color: #ddd;
   display: flex;
   border: 1px solid white;
 }
@@ -199,16 +212,40 @@ redline.html
 
 .cta-redline {
   border: 1px solid white;
+  margin: 10px;
 }
 
-button {
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3 ease 0s;
+.salespitch {
+  margin: 10px;
 }
 
-button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+/*--
+cart.html
+--*/
+.cart-main {
+  color: #ddd;
+  display: flex;
+  border: 1px solid white;
+}
+
+.cart-redline {
+  display: flex;
+  width: 50%;
+  border: 1px solid white;
+  align-items: center;
+}
+
+.cart-redline-child {
+  width: 50%;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-shop-more {
+  border: 1px solid white;
+}
+
+.pay-cta {
+  border: 1px solid white;
 }
