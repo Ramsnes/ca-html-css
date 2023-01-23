@@ -36,6 +36,8 @@ header a {
 
 .cart {
   width: 75%;
+  display: block;
+  margin: auto;
 }
 
 main {
@@ -71,6 +73,8 @@ footer a {
 
 .logosmall {
   width: 50%;
+  margin: auto;
+  display: block;
 }
 
 .copyright {
@@ -129,12 +133,23 @@ browse.html
   display: flex;
   width: 100%;
   margin-top: 30px;
-  border: 3px solid white;
+  /* border: 3px solid white; */
+  padding: 20px 10px 20px 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
 }
+
 .text-jackets {
   color: #ddd;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   text-align: center;
+}
+
+.text-jackets p {
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+
+  padding: 10px 0 10px 0;
 }
 
 .jacket {
@@ -147,11 +162,22 @@ browse.html
 /*--
 about.html
 --*/
+.about__meat {
+  display: flex;
+  flex-wrap: wrap;
+  border: 0.5px solid white;
+  border: 10px;
+}
+
 .about__texts {
   display: flex;
   flex-direction: column;
   gap: 5%;
-  margin: 0px 25px;
+  margin: 40px 0 0 0;
+  padding: 30px;
+  /* border-radius: 10px 10px 10px 10px; */
+  background-color: rgba(221, 221, 221, 0.1);
+  backdrop-filter: blur(3px);
 }
 
 .about__texts p {
@@ -162,13 +188,16 @@ about.html
 .rainyworkers {
   display: flex;
   justify-content: space-evenly;
+  backdrop-filter: blur(3px);
+  background-color: rgb(221, 221, 221, 0.1);
   width: 100%;
+  padding-bottom: 40px;
+  /* border-radius: 0 10px 10px 10px; */
 }
 
 .rainyimg {
   max-width: 30%;
   height: auto;
-  margin: 30px 0;
 }
 
 /*--
@@ -177,17 +206,17 @@ contact.html
 .contact-info {
   display: flex;
   width: 50%;
+  flex-direction: row;
 }
 
 .contact__child {
-  flex: 1;
   margin: 10px;
   /* border: 2px solid white; */
 }
 
 .contact-info p {
   color: #ddd;
-  margin: 0 0 0 20px;
+  margin: 20px 20px;
 }
 
 form {
@@ -201,20 +230,22 @@ redline.html
   color: #ddd;
   display: flex;
   border: 1px solid white;
+  flex-direction: row;
+  backdrop-filter: blur(3px);
+  padding: 50px;
 }
 
 .redline-img-parent {
+  align-items: center;
+  justify-content: space-evenly;
   display: flex;
   width: 100%;
   border: 1px solid white;
-  align-items: center;
 }
 
 .redline-img-child {
-  width: 50%;
+  width: 30%;
   border: 1px solid white;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .cta-redline {
@@ -222,7 +253,13 @@ redline.html
 }
 
 .salespitch {
-  margin: 10px;
+}
+
+.para-div {
+  display: flex;
+  justify-content: space-evenly;
+  backdrop-filter: blur(3px);
+  flex-direction: column;
 }
 
 /*--
@@ -265,7 +302,11 @@ checkout.html
 }
 
 .checkout-redline img {
-  width: 20%;
+  width: 25%;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgb(221, 221, 221);
+  opacity: 0.7;
 }
 
 .cta-checkout {
