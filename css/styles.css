@@ -252,9 +252,6 @@ redline.html
   margin: 10px;
 }
 
-.salespitch {
-}
-
 .para-div {
   display: flex;
   justify-content: space-evenly;
@@ -269,20 +266,22 @@ cart.html
   color: #ddd;
   display: flex;
   border: 1px solid white;
+  flex-direction: row;
+  backdrop-filter: blur(3px);
+  padding: 50px;
 }
 
 .cart-redline {
   display: flex;
-  width: 50%;
+  width: 100%;
   border: 1px solid white;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .cart-redline-child {
-  width: 50%;
+  width: 30%;
   border: 1px solid white;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*--
