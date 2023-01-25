@@ -226,9 +226,11 @@ about.html
 contact.html
 --*/
 .contact-info {
+  border: 1px solid white;
   display: flex;
-  width: 50%;
+  width: 100%;
   flex-direction: row;
+  justify-content: center;
 }
 
 .contact__child {
@@ -243,6 +245,47 @@ contact.html
 
 form {
   color: #ddd;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+
+form fieldset {
+  max-width: 182px;
+  max-height: 183px;
+}
+
+.gmaps {
+  display: block;
+  max-width: 100%;
+  width: 70%;
+  border: 1px solid white;
+}
+
+.gmaps img {
+}
+
+@media (max-width: 800px) {
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__child {
+    justify-content: center;
+    width: auto;
+  }
+
+  .contact__child p {
+    text-align: center;
+  }
+  .gmaps {
+    width: 200px;
+  }
+
+  form {
+    margin: 0;
+  }
 }
 
 /*--
