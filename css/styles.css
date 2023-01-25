@@ -147,6 +147,12 @@ index.html
   }
 }
 
+@media (max-width: 500px) {
+  .threepics {
+    justify-content: flex-end;
+  }
+}
+
 /*--
 browse.html
 --*/
@@ -322,6 +328,19 @@ redline.html
   justify-content: space-evenly;
   backdrop-filter: blur(3px);
   flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .redline-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .redline-main {
+    font-size: small;
+  }
 }
 
 /*--
