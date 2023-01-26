@@ -8,7 +8,7 @@ body {
   margin: 0;
   background-image: url(../images/forest-bgp.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: inherit;
   background-color: #0a3641;
 }
 
@@ -156,12 +156,15 @@ index.html
 /*--
 browse.html
 --*/
+.jacket-block {
+  margin: 30px 0;
+}
+
 .alljackets {
+  border: 1px solid white;
   align-items: center;
   display: flex;
   width: 100%;
-  margin-top: 30px;
-  /* border: 3px solid white; */
   padding: 20px 10px 20px 10px;
   background-color: rgb(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
@@ -171,13 +174,13 @@ browse.html
   color: #ddd;
   /* border: 1px solid white; */
   text-align: center;
+  margin-top: 30px;
 }
 
 .text-jackets p {
-  background-color: rgb(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
-
   padding: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .jacket {
@@ -185,6 +188,24 @@ browse.html
   max-height: auto;
   margin-top: auto;
   /* border: solid white; */
+}
+
+@media (max-width: 800px) {
+  .alljackets {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 30px 100px;
+  }
+
+  .jacket-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .jacket {
+    min-width: 130px;
+  }
 }
 
 /*--
