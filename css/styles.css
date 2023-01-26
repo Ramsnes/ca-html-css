@@ -276,6 +276,7 @@ form fieldset {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
   }
   .contact__child {
     justify-content: center;
@@ -284,13 +285,24 @@ form fieldset {
 
   .contact__child p {
     text-align: center;
+    font-size: small;
   }
+
+  .contact__child-gmaps {
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    width: 150px;
+    flex-direction: row;
+  }
+
   .gmaps {
-    width: 200px;
+    width: 100%;
   }
 
   form {
     margin: 0;
+    font-size: small;
   }
 }
 
