@@ -113,6 +113,25 @@ button:hover {
   background-color: rgba(155, 163, 0, 0.8);
 }
 
+h1 {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.h1class {
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+
+.h1class h1 span {
+  color: #ddd;
+  font-size: 14px;
+  font-weight: 400;
+  background: rgb(0, 0, 0, 0.3);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
 /*--
 index.html
 --*/
@@ -183,7 +202,7 @@ browse.html
 }
 
 .text-jackets p {
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
   padding: 10px 0 10px 0;
   margin: 10px 0 10px 0;
 }
@@ -228,8 +247,6 @@ about.html
 .about__meat {
   display: flex;
   flex-wrap: wrap;
-  border: 0.5px solid white;
-  /* border-radius: 10px; */
 }
 
 .about__texts {
@@ -317,9 +334,6 @@ form fieldset {
   max-width: 100%;
   width: 70%;
   border: 1px solid white;
-}
-
-.gmaps img {
 }
 
 @media (max-width: 1000px) {
@@ -665,6 +679,7 @@ checkoutsuccessful.html
   display: flex;
   justify-content: center;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 @media (max-width: 1000px) {
