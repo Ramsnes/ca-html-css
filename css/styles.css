@@ -8,7 +8,8 @@ body {
   margin: 0;
   background-image: url(../images/forest-bgp.png);
   background-size: cover;
-  background-repeat: inherit;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #0a3641;
 }
 
@@ -23,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  min-height: 70px;
   background-color: #0a3641;
   padding: 0px 20px 0px 20px;
 }
@@ -60,7 +61,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  min-height: 70px;
   background-color: #0a3641;
   padding: 0px 20px 0px 20px;
 }
@@ -115,18 +116,18 @@ button:hover {
 /*--
 index.html
 --*/
-
 .threepics {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 80px 20px 0 20px;
   gap: 5%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .threepics img {
   width: 100%;
+  border-radius: 1px;
 }
 
 @media (max-width: 1000px) {
@@ -261,6 +262,7 @@ about.html
 .rainyimg {
   max-width: 30%;
   height: auto;
+  border-radius: 5px;
 }
 
 @media (max-width: 1000px) {
@@ -541,8 +543,8 @@ checkout.html
 }
 
 .checkout-buttons {
+  flex-direction: row;
   display: flex;
-  flex-direction: column-reverse;
   margin-top: 20px;
 }
 
@@ -570,6 +572,10 @@ checkout.html
   .checkout-redline img {
     margin: 0;
   }
+
+  .checkout-buttons {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 500px) {
@@ -579,8 +585,18 @@ checkout.html
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 0;
+    padding: 20px 40px;
     width: 30%;
+  }
+
+  .checkout-redline {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .order-text p {
+    font-size: 12px;
   }
 
   button {
