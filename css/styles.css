@@ -120,16 +120,20 @@ h1 {
 
 .h1class {
   text-align: center;
-  margin: 20px auto 0 auto;
+  margin: 40px auto 0 auto;
 }
 
 .h1class h1 span {
   color: #ddd;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   background: rgb(0, 0, 0, 0.3);
   padding: 10px 15px;
   border-radius: 10px;
+}
+
+.current {
+  text-decoration: underline;
 }
 
 /*--
@@ -180,7 +184,7 @@ index.html
 browse.html
 --*/
 .jacket-block {
-  margin: 30px 0;
+  margin: 30px;
 }
 
 .alljackets {
@@ -204,7 +208,7 @@ browse.html
 .text-jackets p {
   /* backdrop-filter: blur(3px); */
   padding: 10px 0 10px 0;
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
 }
 
 .jacket {
@@ -238,6 +242,7 @@ browse.html
   }
   .jacket {
     min-width: 90px;
+    margin: 10px auto;
   }
 }
 
@@ -247,13 +252,13 @@ about.html
 .about__meat {
   display: flex;
   flex-wrap: wrap;
+  margin: 30px 70px 0px 70px;
 }
 
 .about__texts {
   display: flex;
   flex-direction: column;
   gap: 5%;
-  margin: 40px 0 0 0;
   padding: 30px;
   /* border-radius: 10px 10px 10px 10px; */
   background-color: rgba(221, 221, 221, 0.1);
@@ -265,6 +270,10 @@ about.html
   margin: 10px;
 }
 
+.about__texts h1 {
+  margin-left: 10px;
+}
+
 .rainyworkers {
   display: flex;
   justify-content: space-evenly;
@@ -272,7 +281,7 @@ about.html
   background-color: rgb(221, 221, 221, 0.1);
   width: 100%;
   padding-bottom: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   /* border-radius: 0 10px 10px 10px; */
 }
 
@@ -292,13 +301,22 @@ about.html
   .about__texts {
     font-size: 12px;
   }
+
+  .rainyworkers {
+    flex-direction: column;
+  }
+
+  .rainyimg {
+    margin: 10px auto;
+    max-width: 60%;
+  }
 }
 
 /*--
 contact.html
 --*/
 .contact-info {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -334,6 +352,10 @@ form fieldset {
   max-width: 100%;
   width: 70%;
   border: 1px solid white;
+}
+
+.contact__child h1 {
+  margin-left: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -385,10 +407,12 @@ redline.html
 .redline-main {
   color: #ddd;
   display: flex;
-  border: 1px solid white;
   flex-direction: row;
+  background-color: rgb(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
+  border-radius: 10px;
   padding: 50px;
+  margin: 40px 50px;
 }
 
 .redline-img-parent {
@@ -396,12 +420,12 @@ redline.html
   justify-content: space-evenly;
   display: flex;
   width: 100%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .redline-img-child {
   width: 35%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .cta-redline {
@@ -411,7 +435,6 @@ redline.html
 .para-div {
   display: flex;
   justify-content: space-evenly;
-  backdrop-filter: blur(3px);
   flex-direction: column;
 }
 
@@ -419,13 +442,13 @@ redline.html
   .redline-main {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 500px) {
   .redline-main {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -439,11 +462,12 @@ cart.html
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  backdrop-filter: blur(3px);
   margin-top: 50px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
+  backdrop-filter: blur(3px);
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 40px 0;
+  margin: 50px auto;
 }
 
 .cart-img-parent {
@@ -470,6 +494,7 @@ cart.html
   width: 20%;
   margin: 0 10px;
   flex-direction: column;
+  font-size: 16px;
 }
 
 .cart-buttons button {
@@ -500,16 +525,12 @@ cart.html
   }
 
   .cart-info-p p {
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
   }
 
   .added {
     text-align: center;
-  }
-
-  .cart-buttons button {
-    width: 100%;
   }
 }
 
@@ -590,6 +611,10 @@ checkout.html
   .checkout-buttons {
     flex-direction: column;
   }
+
+  .order-text h1 {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -611,6 +636,10 @@ checkout.html
 
   .order-text p {
     font-size: 12px;
+  }
+
+  .order-text h1 {
+    font-size: 14px;
   }
 
   button {
@@ -645,7 +674,7 @@ checkoutsuccessful.html
 .checkout-complete {
   display: flex;
   color: #ddd;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin-top: 20px;
   padding-left: 30px;
 }
@@ -664,10 +693,11 @@ checkoutsuccessful.html
 }
 
 .redline-complete {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   width: 15%;
   margin: 5px auto;
+  flex-direction: column;
 }
 
 .redline-complete img {
@@ -679,7 +709,7 @@ checkoutsuccessful.html
   display: flex;
   justify-content: center;
   text-decoration: none;
-  margin-right: 10px;
+  margin-top: 10px;
 }
 
 @media (max-width: 1000px) {
