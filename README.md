@@ -1,101 +1,70 @@
-# ca-html-css
+# Your project title
 
-Mentally dividing the home page:
+![image](../../projects/portfolio-1/images/crossProjectLarge.jpeg)
 
-index.html
+A simple overview of the use/purpose of the project.
 
-Header:
-Home - Browse collection - cart icon
+## Description
 
-Main section:
-Rainydays logo
-3 pics of rainyppl
+Add a more detailed description of what your project entails and set out to do.
 
-Footer:
-About - Contact us
+You can add some bullet points if you'd like to:
 
-///
+- List item 1
+- List item 2
+- List item 3
 
-browse.html
+## Built With
 
-Header:
-Home - Browse collection - cart icon
+You can list a the tech stack that you've used over here
 
-Main section:
-Rainydays logo
-pic of 7 jackets w/ name and prices
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
 
-Footer:
-About - Contact us
+## Getting Started
 
-///
+### Installing
 
-about.html
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
-Header:
-Home - Browse collection - cart icon
+1. Clone the repo:
 
-Main section:
-about info - 2 pics of workers
+```bash
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
+```
 
-Footer:
-About - Contact us
+2. Install the dependencies:
 
-///
+```
+npm install
+```
 
-contact.html
+### Running
 
-Header:
-Home - Browse collection - cart icon
+Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
 
-Main section:
-contact info w/ map - contact form
+To run the app, run the following commands:
 
-Footer:
+```bash
+npm run start
+```
 
-About - Contact us
-///
+## Contributing
 
-redline.html
+Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
-Header:
-Home - Browse collection - cart icon
+## Contact
 
-Main section:
-Rainydays logo - pic of redline jacket w/ description/price etc
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-Footer:
-About - Contact us
+[My Twitter page](www.twitter.com)
 
-///
+[My LinkedIn page](www.linkedin.com)
 
-checkout.html
+## License
 
-Header:
-Home - Browse collection - cart icon
+You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
-Main section:
-order summary/grand total/shipping method - ´shop more CTA´
+## Acknowledgments
 
-Footer:
-About - Contact us
-
-///
-
-checkoutsuccsessfull.html
-
-Header:
-Home - Browse collection - cart icon
-
-Main section:
-Checkout complete info w/ pic of jacket - ´shop more-CTA´
-
-///
-
-cart.html
-
-Header:
-Home - Browse collection - cart icon
-
-Main section:
-rainydays logo - pic of jacket w/ info - ´shop more CTA´ - separate section w/ jacket & pricing w/ ´payment-CTA´
+This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
