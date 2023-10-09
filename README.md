@@ -1,6 +1,6 @@
 # Your project title
 
-![image](../../projects/portfolio-1/images/crossProjectLarge.jpeg)
+![image](crossProjectLarge.jpeg)
 
 A simple overview of the use/purpose of the project.
 
