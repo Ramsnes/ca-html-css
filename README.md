@@ -2,7 +2,8 @@
 
 ![image](crossProjectLarge.jpeg)
 
-A simple overview of the use/purpose of the project.
+A website used for shopping clothes for a specific targeted audience.
+The site contains simple navigational links around the page, which are hardcoded in in HTML and CSS, simulation an interactive website.
 
 ## Description
 
