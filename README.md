@@ -46,6 +46,7 @@ code .
 ## Contributing
 
 You are welcome to open a pull request to review the code.
+How to get started: `https://docs.github.com/en/get-started/quickstart/fork-a-repo`
 
 ## Contact
 
