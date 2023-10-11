@@ -4,6 +4,8 @@
 
 "Rainydays" is a simple and clean website used for shopping clothes for a specific targeted audience.
 
+Live Site: **https://dashing-maamoul-6716f9.netlify.app/**
+
 ## Description
 
 This project wishes to engage an older demographic, perhaps families with children, to buy jackets for all sorts of different outdoors activities. The website is aimed to be straight forward and easy to navigate.
