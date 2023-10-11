@@ -2,7 +2,7 @@
 
 ![image](crossProjectLarge.jpeg)
 
-"Raunydays" is a website used for shopping clothes for a specific targeted audience.
+"Rainydays" is a website used for shopping clothes for a specific targeted audience.
 The site contains simple navigational links around the page, which are hardcoded in in HTML and CSS, simulation an interactive website.
 
 ## Description
@@ -36,7 +36,7 @@ git clone git@github.com:Ramsnes/ca-html-css.git
 
 ### Running
 
-Locate and navigate the cloned repo via the terminal using `cd` to navigate directories, and `ls` to view directories available
+Locate and navigate the cloned repo via the terminal using `cd` to navigate directories, and `ls` to view directories available.
 
 To open the project in you code editor, run the following commands:
 
