@@ -2,12 +2,13 @@
 
 ![image](crossProjectLarge.jpeg)
 
-"Rainydays" is a website used for shopping clothes for a specific targeted audience.
-The site contains simple navigational links around the page, which are hardcoded in in HTML and CSS, simulation an interactive website.
+"Rainydays" is a simple and clean website used for shopping clothes for a specific targeted audience.
 
 ## Description
 
 This project wishes to engage an older demographic, perhaps families with children, to buy jackets for all sorts of different outdoors activities. The website is aimed to be straight forward and easy to navigate.
+
+The site contains simple navigational links around the page, which are hardcoded in in HTML and CSS, simulation an interactive website.
 
 Some bullet points:
 
