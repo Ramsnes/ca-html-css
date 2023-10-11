@@ -36,7 +36,7 @@ git clone git@github.com:Ramsnes/ca-html-css.git
 
 ### Running
 
-Locate and navigate the cloned repo via the terminal using `cd` and `ls`
+Locate and navigate the cloned repo via the terminal using `cd` to navigate directories, and `ls` to view directories available
 
 To open the project in you code editor, run the following commands:
 
