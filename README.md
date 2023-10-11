@@ -46,6 +46,7 @@ code .
 ## Contributing
 
 You are welcome to fork the project to review it's codes. Follow the guide below to get started.
+
 [How to get started](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 
 ## Contact
